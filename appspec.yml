@@ -1,0 +1,59 @@
+version: 0.0
+os: linux 
+files:
+  - source: /
+    destination: /var/www
+  - source:
+    destination:
+permissions:
+  - object:
+    pattern:
+    except:
+    owner:
+    group:
+    mode: 
+    acls:
+      -
+    context:
+      user:
+      type:
+      range:
+    type:
+      -
+hooks:
+  ApplicationStop:
+    - location: 
+      timeout:
+      runas:
+    - location: 
+      timeout:
+      runas: 
+  BeforeInstall:
+    - location: 
+      timeout:
+      runas: 
+    - location: 
+      timeout:
+      runas:
+  AfterInstall:
+    - location:     
+      timeout: 
+      runas:
+    - location: 
+      timeout:
+      runas:
+  ApplicationStart:
+    - location:     
+      timeout: 
+      runas:
+    - location: 
+      timeout:
+      runas:
+  ValidateService:
+    - location:     
+      timeout: 
+      runas:
+    - location: 
+      timeout:
+      runas:
+
