@@ -22,35 +22,35 @@ permissions:
       -
 hooks:
   ApplicationStop:
-    - location: 
+    - location: scripts/null.sh
       timeout:
       runas:
     - location: 
       timeout:
       runas: 
   BeforeInstall:
-    - location: 
+    - location: scripts/null.sh
       timeout:
       runas: 
     - location: 
       timeout:
       runas:
   AfterInstall:
-    - location:     
+    - location: scripts/null.sh
       timeout: 
       runas:
     - location: 
       timeout:
       runas:
   ApplicationStart:
-    - location:     
+    - location: scripts/null.sh    
       timeout: 
       runas:
     - location: 
       timeout:
       runas:
   ValidateService:
-    - location:     
+    - location: scripts/null.sh
       timeout: 
       runas:
     - location: 
